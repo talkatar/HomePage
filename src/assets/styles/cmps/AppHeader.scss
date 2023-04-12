@@ -1,0 +1,45 @@
+header {
+    margin-block-start: rem(73px);
+    justify-content:  space-between;
+
+    .logo {
+        font-size: rem(52px);
+svg{
+    height:rem(52px);
+    width:rem(176px);
+}
+    }
+    
+
+    nav {
+        gap: rem(57px);
+        color: #ffffff;
+        font-family: Raleway;
+        font-size: rem(16px);
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: left;
+
+        a {
+            color: inherit;
+        }
+
+    }
+}
+
+@include for-mobile-layout {
+    header{
+justify-content: center;
+.logo{
+    margin-inline-end: rem(20px);
+}
+        nav {
+            gap: rem(27px);}
+            a{
+                font-size: rem(14px);
+
+            }
+
+}
+}
